@@ -1,4 +1,4 @@
 configured_endpoints: 10
 openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/direct-mortgage%2Flodestarmcp-5b2ba15f56f2a9a5119ca476d08a681312c1c87d2bf98e32305e408a7807c577.yml
 openapi_spec_hash: d13b47fed3a53bcb63d00572ddf2a507
-config_hash: c82a9f797a575779406e16fd69b77013
+config_hash: 43df86a424d9ec2c3b4d87a1b791b14d
