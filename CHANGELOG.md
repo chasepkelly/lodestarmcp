@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.1 (2025-08-22)
+
+Full Changelog: [v2.0.0...v2.0.1](https://github.com/chasepkelly/lodestarmcp/compare/v2.0.0...v2.0.1)
+
+### Chores
+
+* update github action ([bcfaa00](https://github.com/chasepkelly/lodestarmcp/commit/bcfaa0033d60178a5db752e94d38bb5b3bd1a283))
+
 ## 2.0.0 (2025-08-15)
 
 Full Changelog: [v0.0.2...v2.0.0](https://github.com/chasepkelly/lodestarmcp/compare/v0.0.2...v2.0.0)
