@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.1 (2025-08-30)
+
+Full Changelog: [v2.0.0...v2.0.1](https://github.com/chasepkelly/lodestarmcp/compare/v2.0.0...v2.0.1)
+
+### Bug Fixes
+
+* avoid newer type syntax ([04a7b35](https://github.com/chasepkelly/lodestarmcp/commit/04a7b354dff324fa58ead254d37e4ace491d00b1))
+
+
+### Chores
+
+* **internal:** add Sequence related utils ([5581157](https://github.com/chasepkelly/lodestarmcp/commit/5581157b5d7d78b8b1efec0daeca54a033799790))
+* **internal:** change ci workflow machines ([070cf82](https://github.com/chasepkelly/lodestarmcp/commit/070cf824342894f36c95ae1f4f0f81da5f96a24c))
+* **internal:** update pyright exclude list ([5fab13f](https://github.com/chasepkelly/lodestarmcp/commit/5fab13fde9d1dbc3cb66e6842d5ce1f7b9da376a))
+* update github action ([bcfaa00](https://github.com/chasepkelly/lodestarmcp/commit/bcfaa0033d60178a5db752e94d38bb5b3bd1a283))
+
 ## 2.0.0 (2025-08-15)
 
 Full Changelog: [v0.0.2...v2.0.0](https://github.com/chasepkelly/lodestarmcp/compare/v0.0.2...v2.0.0)
