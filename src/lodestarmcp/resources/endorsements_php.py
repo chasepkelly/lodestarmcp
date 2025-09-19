@@ -5,7 +5,7 @@ from __future__ import annotations
 import httpx
 
 from ..types import endorsements_php_list_params
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -49,15 +49,15 @@ class EndorsementsPhpResource(SyncAPIResource):
         purpose: str,
         session_id: str,
         state: str,
-        loan_info: LoanInfoParam | NotGiven = NOT_GIVEN,
-        sub_agent_id: float | NotGiven = NOT_GIVEN,
-        sub_agent_office_id: float | NotGiven = NOT_GIVEN,
+        loan_info: LoanInfoParam | Omit = omit,
+        sub_agent_id: float | Omit = omit,
+        sub_agent_office_id: float | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EndorsementsPhpListResponse:
         """Get available endorsements.
 
@@ -151,15 +151,15 @@ class AsyncEndorsementsPhpResource(AsyncAPIResource):
         purpose: str,
         session_id: str,
         state: str,
-        loan_info: LoanInfoParam | NotGiven = NOT_GIVEN,
-        sub_agent_id: float | NotGiven = NOT_GIVEN,
-        sub_agent_office_id: float | NotGiven = NOT_GIVEN,
+        loan_info: LoanInfoParam | Omit = omit,
+        sub_agent_id: float | Omit = omit,
+        sub_agent_office_id: float | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EndorsementsPhpListResponse:
         """Get available endorsements.
 
