@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable
+from typing import Dict, Union, Iterable
 from datetime import date
 from typing_extensions import Literal, Required, Annotated, TypedDict
 
+from .._types import SequenceNotStr
 from .._utils import PropertyInfo
 from .document_param import DocumentParam
 from .loan_info_param import LoanInfoParam
@@ -219,7 +220,7 @@ class ClosingCostCalculationsPhpCalculateParams(TypedDict, total=False):
     '01/10/2019'
     """
 
-    request_endos: List[str]
+    request_endos: SequenceNotStr[str]
     """# Optional Calculation Parameter
 
     Array of endorsements to get by ID. IDs can be retrieved from the endorsement

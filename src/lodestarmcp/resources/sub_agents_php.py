@@ -7,7 +7,7 @@ from typing import Any, cast
 import httpx
 
 from ..types import sub_agents_php_get_available_sub_agents_params
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -50,15 +50,15 @@ class SubAgentsPhpResource(SyncAPIResource):
         purpose: str,
         session_id: str,
         state: str,
-        address: str | NotGiven = NOT_GIVEN,
-        get_contact_info: int | NotGiven = NOT_GIVEN,
-        township: str | NotGiven = NOT_GIVEN,
+        address: str | Omit = omit,
+        get_contact_info: int | Omit = omit,
+        township: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SubAgentsPhpGetAvailableSubAgentsResponse:
         """
         Get available sub agents for a specific transaction type, state, and county.
@@ -149,15 +149,15 @@ class AsyncSubAgentsPhpResource(AsyncAPIResource):
         purpose: str,
         session_id: str,
         state: str,
-        address: str | NotGiven = NOT_GIVEN,
-        get_contact_info: int | NotGiven = NOT_GIVEN,
-        township: str | NotGiven = NOT_GIVEN,
+        address: str | Omit = omit,
+        get_contact_info: int | Omit = omit,
+        township: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SubAgentsPhpGetAvailableSubAgentsResponse:
         """
         Get available sub agents for a specific transaction type, state, and county.
